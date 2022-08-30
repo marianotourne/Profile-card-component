@@ -19,22 +19,25 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (max-width: 375px)"
+    />
+    <link
+      rel="stylesheet"
       href="./css/desktop.css"
       media="screen and (min-width: 376px)"
     />
   </head>
   <body>
     <div class="main-container">
-      <figure>
-        <img src="./images/bg-pattern-top.svg" alt="" class="pattern-top" />
-      </figure>
-      <figure>
-        <img
-          src="./images/bg-pattern-bottom.svg"
-          alt=""
-          class="pattern-bottom"
-        />
-      </figure>
+      <div class="card-pattern">
+        <div class="pattern-top">
+          <img src="./images/bg-pattern-top.svg" alt="" />
+        </div>
+        <div class="pattern-bottom">
+          <img src="./images/bg-pattern-bottom.svg" alt="" />
+        </div>
+      </div>
       <div class="card">
         <div class="card-header"></div>
         <div class="card-body">
@@ -48,18 +51,18 @@
             />
           </figure>
         </div>
-        <div class="card-foot">
+        <div class="card-footer">
           <div>
-            <p class="card-foot__numbers">80K</p>
-            <p class="card-foot__text">Followers</p>
+            <p class="card-footer__numbers">80K</p>
+            <p class="card-footer__text">Followers</p>
           </div>
           <div>
-            <p class="card-foot__numbers">803K</p>
-            <p class="card-foot__text">Likes</p>
+            <p class="card-footer__numbers">803K</p>
+            <p class="card-footer__text">Likes</p>
           </div>
           <div>
-            <p class="card-foot__numbers">1.4K</p>
-            <p class="card-foot__text">Photos</p>
+            <p class="card-footer__numbers">1.4K</p>
+            <p class="card-footer__text">Photos</p>
           </div>
         </div>
       </div>
