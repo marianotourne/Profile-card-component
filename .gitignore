@@ -16,4 +16,5 @@
 
 .prettierignore
 readme-template.md
-style.guide.md
+style-guide.md
+design/

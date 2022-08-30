@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --darkcyan: hsl(185, 75%, 39%);
+  --verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --darkgrayishblue: hsl(227, 10%, 46%);
+  --darkgray: hsl(0, 0%, 59%);
+  --white: #ffffff;
+  --font: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5;
+  font-family: var(--font);
+}
+
+.main-container {
+  background: var(--darkcyan);
+  height: 100vh;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.main-container .pattern-top {
+  display: none;
+}
+.main-container .pattern-bottom {
+  display: none;
+}
+/* .main-container .pattern-top {
+  width: 50%;
+  position: absolute;
+  top: -150px;
+  left: 15px;
+}
+.main-container .pattern-bottom {
+  width: 80%;
+  position: absolute;
+  top: 315px;
+  left: 300px;
+} */
+
+.card {
+  width: 330px;
+  max-width: 330px;
+  height: 400px;
+  margin: 0 auto;
+  position: absolute;
+  top: 120px;
+  left: 22.5px;
+  right: 22.5px;
+}
+.card .card-header {
+  width: 100%;
+  height: 130px;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card .card-body {
+  background: var(--white);
+  height: 150px;
+  border-bottom: 2px solid #ececec;
+}
+
+.card .card-body div {
+  text-align: center;
+}
+
+.card .card-body div:nth-child(1) {
+  padding-top: 70px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card .card-body div:nth-child(2) {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: var(--darkgrayishblue);
+}
+
+.card .card-body span {
+  margin-left: 10px;
+  font-weight: 400;
+  color: var(--darkgray);
+}
+
+.card .card-body .profile-pic {
+  width: 110px;
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: 77px;
+  left: 110px;
+}
+
+.card .card-foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  background: var(--white);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 20px;
+}
+
+.card-foot .card-foot__numbers {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--verydarkdesaturatedblue);
+  margin-bottom: 5px;
+}
+
+.card-foot .card-foot__text {
+  font-size: 0.7rem;
+  color: var(--darkgrayishblue);
+}
